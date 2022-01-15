@@ -80,3 +80,23 @@ body {
   display: block;
   margin-left: auto;
 }
+
+/* ========================= 
+    client logo styles
+============================ */
+
+.client-logo {
+  padding: 1% 5%;
+}
+.client-logo .image-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 15px 0;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.image-container .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
