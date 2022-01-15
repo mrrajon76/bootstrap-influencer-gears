@@ -194,7 +194,7 @@ body {
 
 .newsletter {
   text-align: center;
-  padding: 4% 0 5%;
+  padding: 4% 2% 5%;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
 }
@@ -285,5 +285,32 @@ body {
   }
   .collections {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* mobile style */
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 70%;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .banner-img {
+    display: block;
+    margin: auto;
+  }
+  .client-logo-container .image-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
