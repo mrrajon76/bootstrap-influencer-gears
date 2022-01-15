@@ -2,16 +2,22 @@
 Custom Fonts
 ============================ */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"); /* poppins 600 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); /* poppins 600 */
 
 body {
   font-family: "Poppins", sans-serif;
 }
-#main-header {
+
+/* ========================= 
+    Header styles
+============================ */
+#header-container,
+#body-container,
+#footer-container {
   max-width: 80%;
-  margin: 20px auto;
+  margin: 2% auto;
 }
-.header-container {
+.header-inner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,4 +39,44 @@ body {
 }
 .menu ul li a:hover {
   color: #e02c6d;
+}
+
+/* ========================= 
+    Main banner styles
+============================ */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left,
+.right {
+  width: 50%;
+}
+.banner-heading {
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0;
+}
+.banner-description {
+  margin: 12px 0 18px;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #e02c6d;
+  border-radius: 50px;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #e02c6d;
+}
+.banner-img {
+  width: 85%;
+  display: block;
+  margin-left: auto;
 }
