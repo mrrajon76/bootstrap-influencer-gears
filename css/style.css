@@ -1,22 +1,36 @@
 /* =========================
-Custom Fonts
+    custom fonts
 ============================ */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); /* poppins 600 */
 
+/* =========================
+    common styles
+============================ */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-
-/* ========================= 
-    Header styles
-============================ */
 #header-container,
 #body-container {
   max-width: 80%;
   margin: 2% auto;
 }
+.menu ul li a:hover,
+.brand-color,
+.single-collection h2 a:hover,
+.social a:hover {
+  color: #e02c6d;
+}
+.client-logo-container,
+.collection-container,
+.newsletter-container {
+  margin: 3% 4% 6%;
+}
+
+/* ========================= 
+    header styles
+============================ */
 .header-inner-container {
   display: flex;
   justify-content: space-between;
@@ -24,6 +38,13 @@ body {
 }
 .logo img {
   width: 300px;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu a {
+  color: #3a3a3a;
+  font-size: 17px;
 }
 .menu ul {
   list-style: none;
@@ -37,15 +58,9 @@ body {
   font-size: 16px;
   color: #3a3a3a;
 }
-.menu ul li a:hover,
-.brand-color,
-.single-collection h2 a:hover,
-.social a:hover {
-  color: #e02c6d;
-}
 
 /* ========================= 
-    Main banner styles
+    main banner styles
 ============================ */
 .banner-container {
   display: flex;
@@ -93,11 +108,6 @@ body {
     client logo styles
 ============================ */
 
-.client-logo-container,
-.collection-container,
-.newsletter-container {
-  margin: 2% 5% 6%;
-}
 .client-logo-container .image-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -132,6 +142,10 @@ body {
 }
 .collection-img {
   overflow: hidden;
+}
+.collection-img img {
+  width: 100%;
+  height: auto;
 }
 .single-collection:hover .collection-img img {
   transform: scale(1.1, 1.1);
@@ -237,4 +251,39 @@ body {
   text-decoration: none;
   color: #fff;
   margin: 0px 8px;
+}
+
+/* ============================= 
+    responsive styles
+================================= */
+
+/* tablet style */
+@media only screen and (max-width: 768px) {
+  #header-container,
+  #body-container {
+    max-width: 88%;
+    margin: 2% auto;
+  }
+  .header-inner-container .menu {
+    display: none;
+  }
+  .header-inner-container .mobile-menu {
+    display: block;
+  }
+  .banner-container,
+  .client-logo-container,
+  .collection-container,
+  .newsletter-container {
+    margin: 8% 0%;
+  }
+  .banner-heading {
+    line-height: 1.2;
+  }
+  .client-logo-container .image-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
