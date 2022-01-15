@@ -5,6 +5,7 @@ Custom Fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"); /* poppins 600 */
 
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -59,6 +60,7 @@ body {
   font-size: 52px;
   font-weight: 700;
   margin: 0;
+  color: #3a3a3a;
 }
 .banner-description {
   margin: 12px 0 18px;
@@ -92,7 +94,8 @@ body {
 ============================ */
 
 .client-logo-container,
-.collection-container {
+.collection-container,
+.newsletter-container {
   margin: 2% 5% 6%;
 }
 .client-logo-container .image-container {
@@ -172,6 +175,44 @@ body {
 }
 
 /* ============================= 
+    newsletter styles
+================================= */
+
+.newsletter {
+  text-align: center;
+  padding: 4% 0 5%;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.newsletter p {
+  margin-top: 0;
+}
+.newsletter form input {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.newsletter form input[type="email"] {
+  padding: 7px 14px;
+  color: #000;
+  width: 40%;
+  border: 1px solid #e02c6d;
+  border-radius: 50px 0px 0px 50px;
+}
+.newsletter form input[type="submit"] {
+  background-color: #e02c6d;
+  color: #fff;
+  margin-left: -6px;
+  padding: 7px 15px;
+  border: 1px solid #e02c6d;
+  border-radius: 0px 50px 50px 0px;
+}
+.newsletter form input[type="submit"]:hover {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a;
+  cursor: pointer;
+}
+/* ============================= 
     fooer styles
 ================================= */
 
@@ -188,7 +229,7 @@ body {
 .footer-info {
   text-align: center;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
 }
 .social a {
   font-size: 16px;
